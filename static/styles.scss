@@ -2,24 +2,38 @@ p{
 text-align: justify;
 
 }
-#titulo
+
+#anime
 {
 text-align: center;
 }
+
+
 #centro
 
 {
 text-align: center;
 
 }
-#titulo1 {
+.titulo 
+{
    margin-left: 20px;
  }
+ .titulo1 
+ {
+  @extend .titulo;
+}
 
+.titulo2
+ {
+ @extend .titulo;
+}
 
- #titulo2 {
-   margin-left: 20px;
- }
+.titulo3 
+{
+ @extend .titulo;
+}
+
 
  .imagen{
    
@@ -51,31 +65,26 @@ text-align: center;
 @extend .imagen; 
 }
 .imagen6{  
-@extend .imagen2; 
-        
+@extend .imagen; 
+margin-right: -1px;
+margin-left: 150px;
       }
 .imagen7{  
 @extend .imagen; 
-margin-left: 700px;    
+margin-left: 210px;
         }
 
-  #parrafo
+
+*#parrafo
  {
    margin-left: 25px;
    margin-right: 10px;
- }
- #parrafo2
- {
-   margin-left: 24px;
-   margin-right: 50px;
- }
-#gif
+
+  }
+ 
+ #gif
 {
   margin-right: 100%;
-}
-#gif2
-{
-  margin-left: 750px;
 }
 
 .wrapper {
@@ -84,4 +93,14 @@ margin-left: 700px;
 .footer {
   height: 4rem;
   background-color: #363535
+}
+iframe
+{
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+a[href]{
+  color: rgba(19, 102, 226, 0);
 }
