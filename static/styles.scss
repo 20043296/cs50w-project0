@@ -18,7 +18,8 @@ text-align: center;
 .titulo 
 {
    margin-left: 20px;
- }
+   border:groove;
+  }
  .titulo1 
  {
   @extend .titulo;
@@ -74,6 +75,27 @@ margin-left: 150px;
 margin-left: 210px;
         }
 
+.imagen8{
+@extend .imagen2;
+
+}
+.imagen9{
+@extend .imagen2;
+
+}
+
+.imagen10{
+@extend .imagen2;
+;
+}
+.imagen11{
+@extend .imagen2;
+
+}
+.imagen12{
+@extend .imagen2;
+
+}
 
 *#parrafo
  {
@@ -102,5 +124,6 @@ margin-right: auto;
 }
 
 a[href]{
-  color: rgba(19, 102, 226, 0);
+  color:rgb(23, 192, 17);
+ 
 }
