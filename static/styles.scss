@@ -1,3 +1,7 @@
+$mycolor:black;
+$myborder:1px solid;
+
+
 p{
 text-align: justify;
 
@@ -17,10 +21,11 @@ text-align: center;
 }
 .titulo 
 {
-   margin-left: 20px;
-   border:groove;
-  }
- .titulo1 
+  margin-left: 20px;
+  border-left: groove #1E90FF;
+  border-bottom: groove #1E90FF;
+}
+  .titulo1 
  {
   @extend .titulo;
 }
@@ -34,18 +39,21 @@ text-align: center;
 {
  @extend .titulo;
 }
-
+.titulo4 
+{
+ @extend .titulo;
+}
 
  .imagen{
    
-   border: 1px solid; 
-   color: black;
+   border: $myborder; 
+   color: $mycolor;
 }
-.imagen1{
+.imagen1 img{
    @extend .imagen;
    margin-right: 10px;
    margin-left: 20px;
-   float: right;
+  
 }
 .imagen2{
    @extend .imagen;
@@ -64,16 +72,16 @@ text-align: center;
 }
 .imagen5{  
 @extend .imagen; 
+height:300px;
 }
 .imagen6{  
-@extend .imagen; 
-margin-right: -1px;
-margin-left: 150px;
-      }
+@extend .imagen5; 
+
+}
 .imagen7{  
-@extend .imagen; 
-margin-left: 210px;
-        }
+@extend .imagen5; 
+
+}
 
 .imagen8{
 @extend .imagen2;
@@ -86,7 +94,7 @@ margin-left: 210px;
 
 .imagen10{
 @extend .imagen2;
-;
+
 }
 .imagen11{
 @extend .imagen2;
@@ -96,7 +104,22 @@ margin-left: 210px;
 @extend .imagen2;
 
 }
-
+.imagen13{
+  @extend .imagen2;
+  
+}
+.imagen14{
+@extend .imagen2;
+    
+}
+.imagen15{
+@extend .imagen2;
+  
+}
+.imagen16{
+@extend .imagen2;
+  
+}
 *#parrafo
  {
    margin-left: 25px;
@@ -114,7 +137,7 @@ margin-left: 210px;
 }
 .footer {
   height: 4rem;
-  background-color: #363535
+  background-color: #343a40!important;
 }
 iframe
 {
@@ -123,7 +146,70 @@ margin-left: auto;
 margin-right: auto;
 }
 
-a[href]{
+p a
+{
   color:rgb(23, 192, 17);
+ 
+}
+@media (max-width: 600px) {
+  .facet_sidebar {
+    display: none;
+  }
+}
+#tabla {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#tabla td, #tabla th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+
+#tabla th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+
+#tabla tr:nth-child(even){
+  background-color: #f2f2f2;}
+
+#tabla tr:hover {
+  background-color: #ddd;
+}
+
+#tabla th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #0695ce;
+  color: white;
+}
+* {
+  box-sizing: border-box;
+}
+
+.zoom{
+  img
+  {
+  padding: 5px;
+  transition: transform .1s;
+  margin: 5px;
+  }
+  img:hover {
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); 
+  }
+
+} 
+
+
+.bg-propio
+{
+  background-color: #343a40!important;
  
 }
