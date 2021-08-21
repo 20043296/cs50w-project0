@@ -1,75 +1,179 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Hola HTML</title>
-    <link rel="stylesheet" href="/cs50w-project0/static/styles.css">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-  
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
+<head>
+  <title>Hola HTML</title>
+  <link rel="stylesheet" href="/cs50w-project0/static/styles.css">
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
-
-  </head>
-  <body>
-    
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
 
 
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-propio">
-      <div class="zoom">
-        <a href="index.html">
+</head>
+
+<body>
+
+
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-propio">
+    <div class="zoom">
+      <a href="index.html">
         <img src="/cs50w-project0/static/img/z.jpg" height="15%" width="15%">
-        </a>
+      </a>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="pag.html">Top Shounen <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="pag2.html">Top Shoujo</a>
+        <a class="nav-item nav-link" href="pag3.html"></a>
       </div>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="pag.html" style="margin-left:-230px;">Top Shounen <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="pag2.html">Top Shoujo</a>
-          <a class="nav-item nav-link" href="pag3.html"></a>
-        </div>
-      </div>
-    </nav>
-    
-
-    
-    <div class="container-sm mt-3" style="border:ridge 5px white;">
-            
-            
-      <div class="wrapper">
-        
-       
-  
-
-
-          
+    </div>
+  </nav>
 
 
 
-        </div>
-    
+  <div class="container-sm mt-3" style="border:ridge 5px white;">
+
+
+    <div class="wrapper">
+
+      <h1 class="centro">Mejores anime Seinen</h1>
+      <br>
+      <br>
+      <br>
+      
+      <img id="gif" src="/cs50w-project0/static/img/pelea.gif" alt="gif" height="350px">
+      
+      <br>
+      <br>
+      <br>
+
+      <ul>
+        <li>
+          <h5>Fate/Zero</h5>
+        </li>
+
+
+        <p id="parrafo">
+          La historia de Fate / Zero se desarrolla 10 años antes de los eventos vistos en Fate / Stay night,
+          <strong> la novela visual (visual novel) creada por la Type Moon,</strong> que posteriormente también terminó
+          siendo
+          adaptada como anime.
+
+          <br>
+          <br>
+
+          Sin embargo, aunque nunca hayas visto ningún otro anime de la serie Fate, puedes empezar con Zero fácilmente.
+          Este seinen funciona como un preludio de la historia, mostrando detalles sobre la Cuarta Guerra del Santo
+          Grial.
+
+          <br>
+          <br>
+          <br>
+        </p>
+
+        <img class="imagen2" src="/cs50w-project0/static/img/faze.gif" alt="Imagen referente de Fate zero"
+          height="350px">
+
+
+
+
+        <br>
+        <br>
+        <br>
+        <li>
+          <h5>One-Punch Man</h5>
+        </li>
+
+        <p id="parrafo">
+          Creada inicialmente como un webcomic por ONE, <strong> One-Punch Man es erróneamente confundido por mucha
+            gente como un anime shōnen</strong>. En realidad es una parodia de las clásicas historias de superhéroes,
+          donde tenemos un personaje superpoderoso que siempre logra derrotar a sus adversarios.
+          <br>
+          <br>
+          La historia se centra en Saitama, un héroe que está totalmente aburrido con su vida, pues se ha vuelto
+          tan fuerte que consigue acabar con cualquier enemigo con un simple puñetazo.
+          <br>
+          <br>
+          <br>
+        </p>
+
+        <img class="imagen2" src="/cs50w-project0/static/img/one.gif" alt="Imagen referente de One-Punch Man"
+          height="350px">
+
+
+        <br>
+        <br>
+        <br>
+        <li>
+          <h5>Neon Genesis Evangelion</h5>
+        </li>
+
+
+
+        <p id="parrafo">
+          Neon Genesis Evangelion (NGE) es otro ejemplo de manga que originalmente era destinado al shōnen, pero que
+          luego
+          cambió su demografía a seinen (cuando pasó a ser publicado por la revista Young Ace).<strong> La serie de
+            Evangelion es
+            considerada por muchos como una de las producciones más grandes del anime.</strong>
+
+          <br>
+          <br>
+
+          La historia de Neon Genesis Evangelion se enfoca en una organización militar (NERV) que tiene la misión de
+          combatir
+          criaturas monstruosas conocidas como Ángeles, utilizando para ello mechas humanoides llamados EVA. Todo ocurre
+          en un
+          escenario post-apocalíptico.
+
+          <br>
+          <br>
+          <br>
+
+        </p>
+
+
+        <img class="imagen2" src="/cs50w-project0/static/img/neon.gif" alt="Imagen referentea Neon Genesis Evangelion"
+          height="350px">
+
+
+
+      </ul>
+
+
+
+
+
     </div>
 
-    <footer class="footer">
+  </div>
 
-    </footer>
+  <footer class="footer">
+    <a href="pag4.html">¿Cuales son los estudios de anime más relevantes de la actualidad?</a>
+  </footer>
 
 </body>
+
 </html>
 
 </body>
-  </body>
+</body>
+
 </html>

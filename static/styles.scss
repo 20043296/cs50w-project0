@@ -7,48 +7,27 @@ text-align: justify;
 
 }
 
-#anime
-{
-text-align: center;
-}
-
-
-#centro
-
+.centro
 {
 text-align: center;
 
+  border-bottom: groove rgb(238, 232, 232);
 }
+
 .titulo 
 {
   margin-left: 20px;
   border-left: groove #1E90FF;
   border-bottom: groove #1E90FF;
 }
-  .titulo1 
- {
-  @extend .titulo;
-}
 
-.titulo2
- {
- @extend .titulo;
-}
-
-.titulo3 
-{
- @extend .titulo;
-}
-.titulo4 
-{
- @extend .titulo;
-}
 
  .imagen{
    
    border: $myborder; 
    color: $mycolor;
-}
+
+  }
 .imagen1 img{
    @extend .imagen;
    margin-right: 10px;
@@ -63,63 +42,11 @@ text-align: center;
 }
 
 .imagen3{  
-@extend .imagen2; 
-  
-}
-.imagen4{  
-  @extend .imagen2; 
-    
-}
-.imagen5{  
 @extend .imagen; 
-height:300px;
-}
-.imagen6{  
-@extend .imagen5; 
-
-}
-.imagen7{  
-@extend .imagen5; 
 
 }
 
-.imagen8{
-@extend .imagen2;
 
-}
-.imagen9{
-@extend .imagen2;
-
-}
-
-.imagen10{
-@extend .imagen2;
-
-}
-.imagen11{
-@extend .imagen2;
-
-}
-.imagen12{
-@extend .imagen2;
-
-}
-.imagen13{
-  @extend .imagen2;
-  
-}
-.imagen14{
-@extend .imagen2;
-    
-}
-.imagen15{
-@extend .imagen2;
-  
-}
-.imagen16{
-@extend .imagen2;
-  
-}
 *#parrafo
  {
    margin-left: 25px;
@@ -129,8 +56,12 @@ height:300px;
  
  #gif
 {
-  margin-right: 100%;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
 }
+
+
 
 .wrapper {
   min-height: calc(100% - 4rem);
@@ -148,14 +79,27 @@ margin-right: auto;
 
 p a
 {
-  color:rgb(23, 192, 17);
+  color:rgb(197, 6, 16);
  
 }
-@media (max-width: 600px) {
-  .facet_sidebar {
-    display: none;
+
+div.example {
+
+  padding: 20px;
+}
+
+@media screen and (min-width: 600px) {
+  div.example {
+    font-size: 15px;
   }
 }
+
+@media screen and (max-width: 600px) {
+  div.example {
+    font-size: 50px;
+  }
+}
+
 #tabla {
   font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
